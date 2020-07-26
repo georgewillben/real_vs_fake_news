@@ -3,7 +3,9 @@
 <br>
 In this project I recieved a data set containing thousands of news articles, some fake, some real. I used tf-idf vectorization along with traditional machine learning algorithms to classify the articles. At the end I had a mearure of 99% precision and 99% accuracy in classifying the test set. Along the way I gained insights in how to tell if an article is real or fake.
 <br>
+
 ## Tools Used
+
 <br>
 * Pandas<br>
 * Matplotlib<br>
@@ -22,7 +24,9 @@ In this project I recieved a data set containing thousands of news articles, som
 * RandomForestClassifier<br>
 * classification_report<br>
 <br>
+
 # How to navigate this repo
+
 Here is a list of files in this repo. They are ordered in the order I created them and they tell a story of the entire process.<br>
 * business_understanding.ipynb<br>
 * Data Cleaning and Preprocessing.ipynb<br>
