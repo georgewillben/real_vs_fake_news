@@ -36,18 +36,27 @@ Here is a list of files in this repo. They are ordered in the order I created th
 * Executive_Summary.pdf<br>
 
 <br>
+
 # The Process
+
 ## Stage 1: Cleaning the data
+
 In this stage I inspected the data and noticed differences in the two sets of articles that could be dead give-aways. Some things such as twitter handles and publisher information had to be removed. Also there were some formating differences such as an added space at the beginning of headlines for fake news.
 <br>
+
 ## Stage 2: Exploratory Data Analysis
+
 In this stage I looked at the vocabularies of both real and fake news as well as the word frequencies. I used Spacy to break down articles into their parts of speech and looked to see if there were differences in frequencies of parts of speech. I looked at the distributions of the lengths of the articles, as well as the distributions of the articles' vocabulary sizes. The insights I gained from this analysis is that real news uses the word "said" much more often. Fake news uses the word "hillary" much more often and contains more images.
 <img src="Images/word_freq.png">
 <br>
+
 ## Stage 3: Modeling
+
 In this stage I used a training set and validation set to experiment with models. I used several machine learning algorithms. I used a grid search to find the best possible hyper parameters. I used Scikit-Lean's tf-idf vectorizer to turn the text an array of values. Logistic regression and XGBoost both did very well.
 <br>
+
 ## Stage 4: Final Evaluation
+
 Finally I chose the logistic regression model because it is simpler than XGBoost. I used tf-idf to vectorize the text data, fiting it only to the training data but transforming both the train and test data. Then I fit a logistic regression model with the hyperparameters found in the modeling stage. I predicted values for the test set and made a classification report. In the end the model had 99% precision and 99% accuracy on the unseen test data.
 
 # Where To Find The Data Set
